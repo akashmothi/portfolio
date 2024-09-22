@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color:aqua;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            max-width: 500px;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px black);
+            text-align: center;
+        }
+        h1 {
+            color: black;
+            margin-bottom: 20px;
+            font-family: 'Arial Black', sans-serif;
+        }
+        label {
+            display: block;
+            margin: 15px 0 5px;
+            font-weight: bold;
+            color: orange;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid black;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+        input:focus, textarea:focus {
+            border-color: rebeccapurple;
+            outline: none;
+        }
+        button {
+            margin-top: 15px;
+            padding: 12px;
+            background-color: red;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: rosybrown;
+        }
+        @media screen and (max-width: 768px) {
+  .form-container {
+      width: 80%; 
+  }
+  .contact {
+      width: 80%; 
+  }
+
+  .register-form h2 {
+      font-size: 20px; 
+  }
+
+  .register-form input {
+      font-size: 16px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .form-container {
+      width: 90%; 
+      padding: 15px; 
+  }
+
+  .contact {
+      width: 100%; 
+      font-size: medium; 
+  }
+
+  .register-form h2 {
+      font-size: 18px;
+
+  .register-form input {
+      font-size: 14px;
+      padding: 8px; 
+  }
+
+  .register-form button {
+      padding: 8px; 
+      font-size: 14px; 
+  }
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Contact Me</h1>
+        <form action="your-server-side-script" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</body>
+</html>
